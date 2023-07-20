@@ -110,3 +110,25 @@ section{
     text-align: right;
     border-right-width: 0;
 }
+
+.prose{
+    text-align:justify;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.prose p{
+    margin:20px auto;
+}
+
+.prose li{
+    font-weight: bold;
+    list-style-position: inside;
+    list-style-type: square;
+}
+.ages li{
+    flex-grow:1;
+    font-weight:lighter;
+    align-self: center;
+    list-style-position: inside;
+    list-style-type:circle;
+}
