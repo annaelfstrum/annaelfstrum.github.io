@@ -54,6 +54,18 @@ section{
     max-width: 800px;
     margin:0px auto;
 }
+section:target h1{
+    animation:flash 1s;
+}
+@keyframes flash{
+    from{
+        text-shadow:5px 5px 0px #fd6,
+                    -5px -5px 0px #fd6;
+    }
+    to{
+        text-shadow: 0px 0px 0px #fd6;
+    }
+}
 address{
     white-space: pre-line;
     margin-bottom: 20px;
@@ -140,4 +152,23 @@ address{
     list-style-type:circle;
 }
 
-
+.nav{
+    width:100%;
+    display:flex;
+    position:fixed;
+}
+.nav li{
+    list-style: none;
+    flex-grow: 1;
+}
+.nav li a{
+    display:block;
+    line-height:50px;
+    background-color: #FC0;
+    COLOR:#666;
+    text-shadow: 1px 1px 0px #fd6;
+    transition:background-color 0.2s;
+}
+.nav li a:hover{
+    background-color: #fa0;
+}
