@@ -8,6 +8,7 @@
    text-decoration: inherit;
    line-height: inherit;
    color:inherit;
+   font-style: inherit;
 }
 
 html,body{
@@ -52,6 +53,10 @@ section{
     padding:50px 0px;
     max-width: 800px;
     margin:0px auto;
+}
+address{
+    white-space: pre-line;
+    margin-bottom: 20px;
 }
 .hero {
     height: 100vh;
@@ -111,12 +116,14 @@ section{
     border-right-width: 0;
 }
 
-.prose{
+.prose,
+.prose2{
     text-align:justify;
     max-width: 500px;
     margin: 0 auto;
 }
-.prose p{
+.prose p,
+.prose2 ul{
     margin:20px auto;
 }
 
@@ -132,3 +139,5 @@ section{
     list-style-position: inside;
     list-style-type:circle;
 }
+
+
