@@ -21,6 +21,7 @@ html,body{
 
 body{
     text-align: center;
+    overflow-x:hidden;
 }
 h1{
     font-size: 36px;
@@ -50,7 +51,7 @@ a:hover{
 }
 section{
     border-top: 2px dashed #eeee;
-    padding:50px 0px;
+    padding:50px 10px;
     max-width: 800px;
     margin:0px auto;
 }
@@ -72,6 +73,7 @@ address{
 }
 .hero {
     height: 100vh;
+    min-height:600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +129,16 @@ address{
     text-align: right;
     border-right-width: 0;
 }
+@media(max-width:500px){
+    body{
+        .blocklist > li{
+            display:block;
+            text-align: center !important;
+            border-width: 0;
+            margin:50px 0;
+        }
+    }
+}
 
 .prose,
 .prose2{
@@ -156,6 +168,7 @@ address{
     width:100%;
     display:flex;
     position:fixed;
+    z-index:9999;
 }
 .nav li{
     list-style: none;
